@@ -51,3 +51,67 @@ Q3.3: Prime Number Calculation Using MPI_Recv
 A master-slave model where the master distributes numbers to be tested for primality. Slaves receive numbers using MPI_Recv, test for primality, and return results (positive for primes, negative for non-primes) using MPI_Send. The master processes results accordingly.
 
 In conclusion, these assignments provide a comprehensive understanding of MPI, from basic communication to complex parallel computing tasks. They highlight the power of parallelism in optimizing performance and demonstrate the importance of efficient inter-process communication for large-scale computations.
+
+Problem 1: Sum of First N Integers Using CUDA
+Objective:
+Implement CUDA programs to calculate the sum of the first N integers using two different methods.
+
+Tasks:
+
+Iterative Method: Compute the sum using a loop without using the mathematical formula.
+
+Formula Method: Compute the sum using the mathematical formula within a CUDA kernel.
+
+Implementation Steps:
+
+Define the number N
+
+Create input and output arrays
+
+Allocate memory on the GPU
+
+Populate the array with the first N integers
+
+Copy data from host to device
+
+Define CUDA grid and block dimensions
+
+Launch the kernel to compute the sum
+
+Copy the result back to host and display it
+
+Problem 2: Merge Sort Using CPU and CUDA
+Objective:
+Implement and compare merge sort algorithms using CPU-based pipelining and GPU parallelism.
+
+Tasks:
+
+Implement merge sort using pipelining on CPU.
+
+Implement merge sort in parallel using CUDA.
+
+Measure and compare the performance of both approaches.
+
+Implementation Steps:
+
+Generate an array of size 1000
+
+Implement both CPU and CUDA versions of merge sort
+
+Use timing functions to benchmark both versions
+
+Display execution time and calculate the speedup
+
+Problem 3: Vector Addition and Bandwidth Measurement in CUDA
+Objective:
+Write a CUDA program for basic vector addition and compute memory bandwidth using profiling tools.
+
+Tasks:
+
+Modify the example to use statically defined global variables instead of dynamic memory allocation.
+
+Record the kernel execution timing and print the results to the console.
+
+Query the GPU device properties such as memory clock rate and memory bus width. Use these to calculate and print the theoretical bandwidth of the device.
+
+Measure the actual bandwidth of the vector addition kernel by calculating the number of bytes read/written and dividing by the execution time. Print this to the console and compare it with the theoretical bandwidth.
