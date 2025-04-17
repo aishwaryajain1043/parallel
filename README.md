@@ -52,6 +52,7 @@ A master-slave model where the master distributes numbers to be tested for prima
 
 In conclusion, these assignments provide a comprehensive understanding of MPI, from basic communication to complex parallel computing tasks. They highlight the power of parallelism in optimizing performance and demonstrate the importance of efficient inter-process communication for large-scale computations.
 
+For Assignment 4 and 5 questions
 Problem 1: Sum of First N Integers Using CUDA
 Objective:
 Implement CUDA programs to calculate the sum of the first N integers using two different methods.
