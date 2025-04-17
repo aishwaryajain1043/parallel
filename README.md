@@ -116,3 +116,45 @@ Record the kernel execution timing and print the results to the console.
 Query the GPU device properties such as memory clock rate and memory bus width. Use these to calculate and print the theoretical bandwidth of the device.
 
 Measure the actual bandwidth of the vector addition kernel by calculating the number of bytes read/written and dividing by the execution time. Print this to the console and compare it with the theoretical bandwidth.
+
+
+
+Assignment 6 
+Square Root Computation Using CUDA
+Objective:
+Demonstrate the performance cost of computing square roots on large datasets using CUDA, and compare it with simpler vector operations like addition and multiplication.
+
+Task Breakdown:
+Understanding the Operation Cost:
+
+Square root is a more computationally expensive operation compared to basic arithmetic operations like addition and multiplication.
+
+This exercise focuses on analyzing the time it takes to perform square root computations on large datasets using GPU parallelism.
+
+CUDA Implementation:
+
+Create a CUDA program that:
+
+Accepts an input array A of floats.
+
+Computes the square root of each element in A.
+
+Stores the results in output array C.
+
+Each GPU thread is responsible for computing the square root of one element from the array.
+
+Performance Evaluation:
+
+Test the CUDA program with input arrays of the following sizes:
+
+50,000 elements
+
+500,000 elements
+
+5,000,000 elements
+
+50,000,000 elements
+
+Record the kernel execution time for each array size.
+
+Store the results in a spreadsheet and plot charts to visualize how computation time scales with array size.
